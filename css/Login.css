@@ -1,1 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header {
+    background-color: rgb(255, 251, 246);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.social-media {
+display: flex;
+justify-content:space-evenly;
+margin-top: 10%;
+
+}
+#h3 {
+text-align: center;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.separator-line {
+    flex: 1;
+    height: 1px;
+    background-color:coral;
+}
+
+.separator-text {
+    margin: 0 10px; 
+    color: coral;
+    font-weight: bold;
+}
+
+
+#ou{
+text-align: center;
+color:coral;
+margin-top: 5%;
+font-size: 1em;
+}
+
+.logo {
+    margin: 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 40px;
+}
+
+#log{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: chocolate; 
+    color: white; 
+    cursor: pointer;
+    outline: none;
+    background-color:coral;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.connexion {
+   
+    width: 50%;
+    height: 80%;
+    background-color: rgba(247, 244, 234, 0.5); /* Couleur de fond transparente */
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.pic-man {
+    margin-left:40px;
+    margin-right: 40px; 
+}
+
+.connexion{
+    width: 30%; 
+}
+
+#email {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 5%;
+    border:none;
+    height: 25px;
+    margin-bottom: 5%;
+}
+
+#remember {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 5%;
+    border: none;
+    height: 25px;
+    margin-bottom: 5%;
+
+}
+
+#check-remember {
+padding-left:10px;
+margin-bottom:10px;
+border: none;
+}
