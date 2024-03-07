@@ -1,22 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&  display=swap') ;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-    font-family : "Poppins", sans-serif;
-    margin: 0;
- }
-body{
-    min-height: 100vh;
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        } 
+@media screen and (min-width: 832px)  {
+    header {
+        background-color: #FEF7F4;
+        padding: 20px;
+        display: flex;
+    }
+    .appstore, .playstore{
+    display: none;
+    }
+    
+    main {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0;
+    }
+    .left-side p {
+        font-size: 2.5rem;
+    }
 }
-header{
+/*telephone*/
+@media screen and (max-width: 832px){
+    header {
+        display: grid;
+        font-size: 10px;
+    }
+    .logo {
+        padding-top:20px;
+        padding-left: 25%;
+    }
+    main {
+        display: grid;
+        padding: 20px 0;
+    }
+    .store{
+        display: flex;
+        }
+    .handphone{
+        display:none;
+    }
+    .left-side p {
+        font-size: 1.8rem;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header {
     background-color: #FEF7F4;
-    height: 10vh;
-    display: flex;
+    align-items: center;
 }
-header ul{
-    width: 100%;
+
+
+header ul {
     list-style: none;
     display: flex;
+    padding: 20px 0;
+
 }
-header a{
+
+header li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header ul li a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -27,3 +89,30 @@ header a{
 header a:hover{
     color: coral;
 }
+.store{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    gap: 18%;
+
+}
+.playstore{
+    width: 130px;
+}
+.appstore{
+    width: 130px;
+}
+span{
+    color: coral;
+}
+.left-side {
+    flex: 1;
+    text-align: center;
+}
+.handphone{
+    position:absolute;
+    top: 26%;
+    right: 48%;
+}
+
