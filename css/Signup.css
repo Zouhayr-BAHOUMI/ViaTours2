@@ -13,7 +13,7 @@
         padding: 20px;
         display: flex;
     }
-    .appstore, .playstore{
+    .store{
     display: none;
     }
     
@@ -25,22 +25,27 @@
     .left-side p {
         font-size: 2.5rem;
     }
+    .right-side{
+        border-radius: 30px;
+        box-shadow:inset 2px 0 4px rgba(0, 0, 0, 0.226);
+    }
 }
 /*telephone*/
 @media screen and (max-width: 832px){
     header {
         display: grid;
         font-size: 10px;
+        justify-content: center;
     }
     .logo {
         padding-top:20px;
-        padding-left: 25%;
+        padding-left: 30%;
     }
     main {
         display: grid;
-        padding: 20px 0;
+        padding: 20px 0 0 0;
     }
-    .store{
+    .stores{
         display: flex;
         }
     .handphone{
@@ -49,6 +54,12 @@
     .left-side p {
         font-size: 1.8rem;
     }
+    .right-side{
+       border-radius: 20px 20px 0 0 ;
+       box-shadow:inset 0 4px 4px rgba(0, 0, 0, 0.226);
+
+    }
+
 }
 
 
@@ -63,6 +74,7 @@ body {
 header {
     background-color: #FEF7F4;
     align-items: center;
+
 }
 
 
@@ -89,18 +101,15 @@ header ul li a {
 header a:hover{
     color: coral;
 }
-.store{
+.stores{
     display: flex;
-    margin-left: 5%;
     margin-top: 3%;
-    margin-bottom: 5%;
-    gap: 18%;
+    margin-bottom: 3%;
+    gap: 4%;
+    justify-content: center;
+}
 
-}
-.playstore{
-    width: 130px;
-}
-.appstore{
+.store{
     width: 130px;
 }
 span{
@@ -116,3 +125,75 @@ span{
     right: 48%;
 }
 
+.right-side {
+    flex: 1;
+    background-color: #FEF7F4;
+    padding: 20px;
+}
+.right-side input[type="submit"]{
+    justify-content: center;
+
+}
+.right-side .icons{
+display: flex;
+justify-content: center;
+justify-content: space-evenly;
+}
+.top{
+    font-size: 1.2rem;
+}
+.top p{
+    display: flex;
+    justify-content: center;
+}
+
+.nomprenom{
+    display: grid;
+  }
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e86d3c2d;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: coral;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #E86D3C;
+}
+
+
+.line {
+    position: relative;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .line:before, .line:after {
+    content: "";
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    width: 45%;
+    top: 50%; 
+  }
+  
+  .line:before {
+    left: 0;
+  }
+  
+  .line:after {
+    right: 0;
+  }
+  
