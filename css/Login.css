@@ -133,3 +133,34 @@ padding-left:10px;
 margin-bottom:10px;
 border: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .connexion {
+        width: 90%;
+        margin-bottom: 20px;
+    
+    }
+    .pic-man {
+       display: none;
+    }
+
+    .navbar {
+        flex-direction: column; /* Réorganiser les éléments en colonne */
+    }
+
+    ul {
+        flex-direction: column; /* Réorganiser les éléments en colonne */
+        align-items: center;
+    }
+
+    li {
+        margin-left: 0; /* Supprimer la marge à gauche pour les éléments de la liste */
+        margin-bottom: 10px; /* Ajouter un espacement entre les éléments de la liste */
+    }
+
+    .logo {
+        margin: 10px auto; /* Centrer le logo */
+    }
+}
+
+}
