@@ -18,7 +18,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     background-color: #FEF7F4;
-    padding: 2rem 10rem;
+    padding: 1.5rem 10rem;
 }
 
 .logo {
@@ -70,6 +70,50 @@ main{
     padding: 6rem 10rem;
 }
 
-.container1{
-
+.container1 {
+    position: relative;
+    width: 1560px;
+    height: 776px; 
 }
+
+.container1 .img {
+    position: absolute;
+    width: 1640px;
+    height: 700px;
+}
+
+.search-bar{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 30%;
+    margin-left: 35%;
+    background-color: white;
+    border-radius: 1.1rem;
+    height: 50px;
+    width: 500px;
+}
+
+.search-bar .icon {
+    height: 30px;
+    width: 30px;
+    margin-left: 5rem;
+}
+
+.search-bar .search-input {
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    opacity: 0.60;
+    font-family: Josefin Sans;
+    padding-top: 0.5rem;
+}
+
+
+
+
+
+
+
