@@ -4,13 +4,12 @@
             font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
 
         } 
 @media screen and (min-width: 832px)  {
     header {
         background-color: #FEF7F4;
-        padding: 20px;
+        padding: 0 10px;
         display: flex;
     }
     .store{
@@ -19,16 +18,26 @@
     
     main {
         display: flex;
-        justify-content: space-around;
-        padding: 50px 0;
+        padding: 50px 0 0 0;
     }
-    .left-side p {
+    .left-side h4 {
         font-size: 2.5rem;
     }
     .right-side{
         border-radius: 30px;
         box-shadow:inset 2px 0 4px rgba(0, 0, 0, 0.226);
+    margin-right: 20px;
     }
+    .form{
+        margin-top: 20px;
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+    .nomprenom{
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+      }
 }
 /*telephone*/
 @media screen and (max-width: 832px){
@@ -51,13 +60,17 @@
     .handphone{
         display:none;
     }
-    .left-side p {
+    .left-side h4 {
         font-size: 1.8rem;
     }
     .right-side{
        border-radius: 20px 20px 0 0 ;
        box-shadow:inset 0 4px 4px rgba(0, 0, 0, 0.226);
 
+    }
+    .form{
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
 }
@@ -66,7 +79,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-image: url();
+    background-image: url(back.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -74,7 +87,6 @@ body {
 header {
     background-color: #FEF7F4;
     align-items: center;
-
 }
 
 
@@ -101,6 +113,7 @@ header ul li a {
 header a:hover{
     color: coral;
 }
+
 .stores{
     display: flex;
     margin-top: 3%;
@@ -118,11 +131,14 @@ span{
 .left-side {
     flex: 1;
     text-align: center;
+    justify-items: center;
 }
-.handphone{
-    position:absolute;
-    top: 26%;
-    right: 48%;
+.handphone img{
+    position: absolute;
+    left: 210px;
+    bottom: 0;
+    width: 22%;
+    height: 500px;
 }
 
 .right-side {
@@ -130,26 +146,24 @@ span{
     background-color: #FEF7F4;
     padding: 20px;
 }
-.right-side input[type="submit"]{
-    justify-content: center;
 
-}
 .right-side .icons{
 display: flex;
 justify-content: center;
 justify-content: space-evenly;
+margin-top: 20px;
+margin-bottom: 15px;
 }
 .top{
     font-size: 1.2rem;
 }
-.top p{
+.top h4{
     display: flex;
     justify-content: center;
+    margin-bottom: 8px;
 }
 
-.nomprenom{
-    display: grid;
-  }
+
 input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -168,6 +182,8 @@ input[type="submit"] {
     cursor: pointer;
     margin-top: 30px;
     font-size: 16px;
+    width: 100%;
+
 }
 
 input[type="submit"]:hover {
@@ -183,7 +199,7 @@ input[type="submit"]:hover {
   
   .line:before, .line:after {
     content: "";
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid coral;
     position: absolute;
     width: 45%;
     top: 50%; 
