@@ -100,13 +100,22 @@ li {
     height: 100vh; 
 }
 
-.pic-man {
-    margin-left:40px;
-    margin-right: 40px; 
+.man-walking{
+    width:20vw;
+    margin-right:50px ;
+    margin-left: 75px;
 }
+
+.newAccount {
+padding-top: 35px;
+
+}
+
+
 
 .connexion{
     width: 30%; 
+    height: 90%;
 }
 
 #email {
@@ -137,30 +146,37 @@ border: none;
 @media only screen and (max-width: 600px) {
     .connexion {
         width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+        height: 80%;
     
     }
-    .pic-man {
+
+    
+    .man-walking {
        display: none;
     }
 
+    .left-side h4 {
+    display: none;
+    }
+
+
     .navbar {
-        flex-direction: column; /* Réorganiser les éléments en colonne */
+        flex-direction: column; 
     }
 
     ul {
-        flex-direction: column; /* Réorganiser les éléments en colonne */
+        flex-direction: column; 
         align-items: center;
     }
 
     li {
-        margin-left: 0; /* Supprimer la marge à gauche pour les éléments de la liste */
-        margin-bottom: 10px; /* Ajouter un espacement entre les éléments de la liste */
+        margin-left: 0; 
+        margin-bottom: 10px; 
     }
 
     .logo {
-        margin: 10px auto; /* Centrer le logo */
+        margin: 10px auto;
     }
 }
 
-}
