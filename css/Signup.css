@@ -42,13 +42,13 @@
 /*telephone*/
 @media screen and (max-width: 832px){
     header {
-        display: grid;
         font-size: 10px;
-        justify-content: center;
     }
+
     .logo {
         padding-top:20px;
-        padding-left: 30%;
+        padding-left: 25%;
+
     }
     main {
         display: grid;
@@ -96,12 +96,6 @@ header ul {
     padding: 20px 0;
 
 }
-
-header li {
-    display: inline;
-    margin-right: 20px;
-}
-
 header ul li a {
     height: 100%;
     padding: 0 30px;
@@ -134,11 +128,11 @@ span{
     justify-items: center;
 }
 .handphone img{
-    position: absolute;
-    left: 210px;
+    flex: 1;
+    position: relative;
     bottom: 0;
-    width: 22%;
-    height: 500px;
+    width: 20vw;
+    height: 30vw;
 }
 
 .right-side {
@@ -172,6 +166,10 @@ input[type="password"] {
     padding: 10px;
     border: 1px solid #e86d3c2d;
     border-radius: 5px;
+    margin-bottom: 6px;
+}
+.deja{
+    font-size: 0.7rem;
 }
 input[type="submit"] {
     background-color: coral;
